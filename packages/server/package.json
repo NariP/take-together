@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@sharecode/common": "1.0.0"
+  },
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "name": "@sharecode/server",
+  "version": "1.0.0"
+}
