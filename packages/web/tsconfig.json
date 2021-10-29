@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },// 절대 경로 설정
+    "strict": true,
+    "sourceMap": false,
+    "module": "esnext",
+    "moduleResolution": "node", // 모듈 해석 방식은 node 처럼 하기
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "jsx": "react-jsx", // tsx 파일을 jsx로 어떻게 컴파일할 것인지 'preserve', 'react-native', 'react'
+    "allowJs": true, // js 파일들 ts에서 import해서 쓸 수 있는지
+    "skipLibCheck": true, // 모든 선언 파일의 타입체킹 스킵 여부
+    "esModuleInterop": true,
+    "downlevelIteration": true, // 타겟이 'ES5', 'ES3'일 때에도 'for-of', spread 그리고 destructuring 문법 모두 지원
+    "noImplicitAny": true, // any타입 금지 여부
+    "strictNullChecks": true, // null, undefined 타입에 이상한 짓 할시 에러내기
+    "strictFunctionTypes": true, // 함수파라미터 타입체크 강하게
+    "strictPropertyInitialization": true, // class constructor 작성시 타입체크 강하게
+    "alwaysStrict": true, // 자바스크립트 "use strict" 모드 켜기
+    "removeComments": true, // 컴파일시 주석제거
+    "noUnusedLocals": true, // 쓰지않는 지역변수 있으면 에러내기
+    "noUnusedParameters": true, // 쓰지않는 파라미터 있으면 에러내기
+  },
+  "include": ["src/**/*", "./types/static/index.d.ts"],
+  "exclude": ["build"]
+}

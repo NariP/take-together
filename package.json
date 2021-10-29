@@ -10,6 +10,13 @@
     "packages/**"
   ],
   "devDependencies": {
+    "@types/prettier": "^2",
+    "prettier": "^2.4.1",
     "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "server": "yarn workspace @sharecode/server",
+    "web": "yarn workspace @sharecode/web",
+    "common": "yarn workspace @sharecode/server"
   }
 }
